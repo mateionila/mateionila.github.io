@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>InfoClass</title>
+        <link rel="stylesheet" href="proiect.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+        
+        <video autoplay muted loop id class="background-video">
+            <source src="infoclass3.mp4" type="video/mp4">
+        </video>
+        <div class="navigation-bar">
+            <div class="logo">
+                <img src="infoclass.png" alt="Logo" />
+            </div>
+            <div class="navigation-items">
+                <div class="dropdown"> <div class="button"> PLANURI </div>
+                    <div class="dropdown-content">
+                        <a href="#">GOLD</a>
+                        <a href="#">SILVER</a>
+                        <a href="#">BRONZE</a>
+                    </div>
+                </div>
+                <div class="navigation-button">TEHNOLOGIE</div>
+                <div class="navigation-button">DESPRE</div>
+            </div>
+        </div>
+        <div class="motoo">
+            <img src="logo2.png" alt="u" />
+        </div>
+        <div class="moto2">
+            <a> O initiativa marca <i>X</i>Class</a>
+        </div>
+        <div class="infoclass">
+            <a>INFOCLASS</a>
+        </div>
+        <section class="subtitlu">
+            <a>FACILITĂȚI</a>
+            <div class="facilitati">
+                <div class="dropdownf">
+                    <div class="dropdown-buttonf">
+                        <div class="logomic">
+                            <img src="graduation.png" alt="grile" />
+                        </div>
+                        Peste 12000 de grile
+                    </div>
+                    <div class="dropdown-contentf">
+                        <a>InfoClass îți  pune la dispoziție peste 12000 de grile de la toate centrele universitare din țară.</a>
+                    </div>
+                </div>
+                <div class="dropdownf">
+                    <div class="dropdown-buttonf">
+                        <div class="logomic">
+                            <img src="webinars.png" alt="grile" />
+                        </div>
+                        Toată materia înregistrată
+                    </div>
+                    <div class="dropdown-contentf">
+                        <a>Atât la informatică cât și la matematică, profesorii noștri au inregistrat materiale cu toată materia, explicând în detaliu fiecare capitol.</a>
+                    </div>
+                </div>
+                <div class="dropdownf">
+                    <div class="dropdown-buttonf">
+                        <div class="logomic">
+                            <img src="chat-program.png" alt="grile" />
+                        </div>
+                        Suport 24/7
+                    </div>
+                    <div class="dropdown-contentf">
+                        <a>Mentorii InfoClass îți sunt aproape pe tot parcursul anului, pregătiți să răspundă la întrebări oricând ai nevoie.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sectiune-dinamica">
+            <a class="intrebare-fals">Vrei să intri în InfoClass?</a>
+            <div class="butoane">
+                <button class="buton" id="movingButton">NU</button>
+                <button class="buton-da" id="formButton">DA</button>
+                <div id="formContainer" class="hidden">
+                    <form id="signupForm">
+                        <h2>Formular de Înscriere</h2>
+                        <label for="name">Nume:</label>
+                        <input type="text" id="name" name="name" placeholder="Introdu numele" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Introdu email-ul" required>
+                        <div class="error" id="emailError"></div>
+
+                        <label for="age">Vârstă:</label>
+                        <input type="number" id="age" name="age" placeholder="Introdu vârsta" required>
+                        
+                        <button type="submit" class="btn" id="submittt">Trimite</button>
+                    </form>
+                </div>
+                <script src="form.js"></script>
+            </div>
+        </section>
+        <section class="sectiune-test">
+            <button id="startButton">Testează-ți cunoștințele</button>
+            <div id="quizContainer">
+                <h2>Test de Matematică</h2>
+                <p id="question">Întrebare:</p>
+                <div id="answers"></div>
+                <button id="nextQuestion">Următoarea Întrebare</button>
+            </div>  
+         <script src="quiz.js"></script>
+        </section>
+    </body>
+</html>
